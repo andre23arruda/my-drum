@@ -16,7 +16,7 @@ const keyboard = [
 buttons.forEach(button => (
     button.addEventListener('click', () => {
         const button_id = button.id
-        const sound = document.querySelector(`#som_${ button_id }`)
+        const sound = document.querySelector(`#audio_${ button_id }`)
         if (currentSong !== button_id) {
             sound.play()
         } else {
