@@ -1,0 +1,70 @@
+:root {
+  --gray: #aaa;
+  --blue: #3d85e9;
+  --dark-blue: #3052af;
+  --white: #fff;
+  --light: rgb(229, 255, 0);
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+h1, h4 {
+  color: var(--white);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+h4 { font-size: 1rem; }
+b { font-weight: bold; }
+
+.keyboard {
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.key {
+  background-color: var(--white);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--gray);
+  color: var(--blue);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.key.active,
+.key:active {
+  background-color: var(--blue);
+  border: 4px solid  var(--blue);
+  box-shadow: 3px 3px 0 var(--dark-blue) inset;
+  color: var(--white);
+  outline: none;
+}
+
+.key.focus,
+.key:focus {
+  outline: none;
+  /* box-shadow: 1px 1px 10px var(--light); */
+}
+
+.key.active:focus,
+.key:active:focus {
+  /* box-shadow: 3px 3px 0 var(--dark-blue) inset, 1px 1px 10px var(--light); */
+}

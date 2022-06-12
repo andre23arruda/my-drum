@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My drum</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="images/bateria.png">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <h1>My drum</h1>
+
+        <h4>
+            You can use the keys
+            <b>q, w, e, a, s, d, z, x, c </b>
+            to play
+        </h4>
+
+        <section class="keyboard">
+            <button id="key_pom" class="key">Pom</button>
+            <button id="key_clap" class="key">Clap</button>
+            <button id="key_tim" class="key">Tim</button>
+
+            <button id="key_puff" class="key">Puff</button>
+            <button id="key_splash" class="key">Splash</button>
+            <button id="key_toim" class="key">Toim</button>
+
+            <button id="key_psh" class="key">Psh</button>
+            <button id="key_tic" class="key">Tic</button>
+            <button id="key_tom" class="key">Tom</button>
+        </section>
+
+        <audio src="sounds/keyq.wav" id="som_key_pom"></audio>
+        <audio src="sounds/keyw.wav" id="som_key_clap"></audio>
+        <audio src="sounds/keye.wav" id="som_key_tim"></audio>
+        <audio src="sounds/keya.wav" id="som_key_puff"></audio>
+        <audio src="sounds/keys.wav" id="som_key_splash"></audio>
+        <audio src="sounds/keyd.wav" id="som_key_toim"></audio>
+        <audio src="sounds/keyz.wav" id="som_key_psh"></audio>
+        <audio src="sounds/keyx.wav" id="som_key_tic"></audio>
+        <audio src="sounds/keyc.wav" id="som_key_tom"></audio>
+
+        <script src="./js/play-audio.js"></script>
+    </body>
+</html>
